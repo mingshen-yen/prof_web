@@ -7,7 +7,11 @@ export type Project = {
   body: string;
   stack: string[];
   sourceUrl?: string;
+  /** Which label and icon the source button wears; a paper is not source code. */
+  sourceKind: "code" | "paper";
   liveUrl?: string;
+  /** Likewise: not every secondary link is something you can run. */
+  liveKind: "live" | "article" | "notes";
   featured: boolean;
   order: number;
 };
@@ -130,6 +134,9 @@ export type UiStrings = {
     back: string;
     live: string;
     source: string;
+    paper: string;
+    article: string;
+    notes: string;
     builtWith: string;
     notFound: string;
   };

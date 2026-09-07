@@ -5,6 +5,7 @@ tag: Analysis
 image: /images/iam-emissions-pathways.jpg
 stack: [Python, pyam, pandas, matplotlib]
 sourceUrl: https://github.com/mingshen-yen/IAM_analysis
+featured: false
 order: 1
 ---
 

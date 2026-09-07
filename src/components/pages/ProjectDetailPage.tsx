@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router";
-import { ArrowLeft, ExternalLink, GitBranch } from "lucide-react";
+import { ArrowLeft, ExternalLink, FileText, GitBranch } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import { getProjectBySlug } from "../../api/projects";
 import { getUi } from "../../api/ui";
@@ -45,7 +45,7 @@ export const ProjectDetailPage = () => {
               rel="noopener noreferrer"
               className="btn btn--primary"
             >
-              {ui.project.live}
+              {ui.project[project.liveKind]}
               <ExternalLink size={13} />
             </a>
           )}
@@ -56,8 +56,12 @@ export const ProjectDetailPage = () => {
               rel="noopener noreferrer"
               className="btn btn--ghost"
             >
-              <GitBranch size={13} />
-              {ui.project.source}
+              {project.sourceKind === "paper" ? (
+                <FileText size={13} />
+              ) : (
+                <GitBranch size={13} />
+              )}
+              {ui.project[project.sourceKind === "paper" ? "paper" : "source"]}
             </a>
           )}
         </div>

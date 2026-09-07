@@ -3,9 +3,11 @@ title: Velocity Pulses in Moderate Earthquakes
 summary: "How velocity pulse periods scale with magnitude in moderate (Mw 6-7) earthquakes, tested against simulation."
 tag: Research
 image: /images/velocity-pulses-moderate.jpg
-stack: [Python, Matlab]
-sourceUrl: https://www.researchgate.net/publication/354429255_Within-_and_Between-Event_Variabilities_of_Strong-Velocity_Pulses_of_Moderate_Earthquakes_within_Dense_Seismic_Arrays
+stack: [Python, MATLAB]
+sourceUrl: https://doi.org/10.1785/0120200376
+sourceKind: paper
 liveUrl: https://tec.earth.sinica.edu.tw/publication/newsletter/html/202412/46_06.html
+liveKind: article
 featured: false
 order: 3
 ---

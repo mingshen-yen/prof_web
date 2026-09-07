@@ -35,11 +35,14 @@
   "project": {
     "back": "所有作品",
     "live": "線上展示",
-    "source": "原始來源",
+    "source": "原始碼",
     "builtWith": "使用技術",
     "notFound": "找不到這個作品",
     "viewAll": "看所有作品",
-    "filterAll": "全部"
+    "filterAll": "全部",
+    "paper": "閱讀論文",
+    "article": "相關報導",
+    "notes": "研究筆記"
   },
   "about": {
     "greeting": "你好，",

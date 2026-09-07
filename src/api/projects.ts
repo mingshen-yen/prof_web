@@ -20,7 +20,12 @@ function toProject(path: string, source: string): Project {
     body,
     stack: Array.isArray(data.stack) ? data.stack.map(String) : [],
     sourceUrl: data.sourceUrl ? String(data.sourceUrl) : undefined,
+    sourceKind: data.sourceKind === "paper" ? "paper" : "code",
     liveUrl: data.liveUrl ? String(data.liveUrl) : undefined,
+    liveKind:
+      data.liveKind === "article" || data.liveKind === "notes"
+        ? data.liveKind
+        : "live",
     featured: data.featured === true,
     order: Number(data.order ?? Number.MAX_SAFE_INTEGER),
   };

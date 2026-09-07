@@ -39,11 +39,14 @@
   "project": {
     "back": "All projects",
     "live": "Live demo",
-    "source": "Source",
+    "source": "Source code",
     "builtWith": "Built with",
     "notFound": "Project not found.",
     "viewAll": "View all projects",
-    "filterAll": "All"
+    "filterAll": "All",
+    "paper": "Read the paper",
+    "article": "Related article",
+    "notes": "Study notes"
   },
   "about": {
     "greeting": "Hello,",
