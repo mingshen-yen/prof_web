@@ -1,5 +1,5 @@
 ---
-title: Near-Fault Velocity Pulses, Mw 6 to 7.8
+title: Near-Fault Earthquake Pulses: Killer Pulse
 summary: "80 velocity pulses extracted from five moderate earthquakes across three national networks, then 30 more from the 2023 Kahramanmaraş doublet — each tested against a simulation of the same rupture."
 tag: Research
 image: /images/velocity-pulses-moderate.jpg
@@ -12,42 +12,65 @@ featured: false
 order: 3
 ---
 
-A velocity pulse concentrates a rupture's energy into one or two large swings, and it damages structures whose natural period matches it. Engineering practice predicts a pulse's period from magnitude alone. Two studies test that assumption from opposite ends of the magnitude range, and find it does not hold.
+Analysing observations from seven Mw 6.1–7.8 earthquakes to understand why damaging velocity pulses vary dramatically between nearby locations and why earthquake magnitude alone cannot reliably predict them.
 
-#### **_Data_**
+#### ***Project at a glance***
 
-- **Five moderate earthquakes, Mw 6.1–7.04**, across three national networks: 2016 Meinong and 2018 Hualien from TSMIP (Taiwan CWB, 200 Hz sampling), the 2016 Kumamoto foreshock and mainshock from K-NET, KiK-net and the JMA network (100 Hz), and 2010 Darfield from the GNS network
-- **The 2023 Kahramanmaraş doublet**, Mw 7.8 Pazarcık and Mw 7.5 Elbistan, recorded by **349 and 288 strong-motion stations** (AFAD-TADAS) — raw records from AFAD, independently processed records from the Engineering Strong Motion database
-- **Synthetic waveforms** from published 3D dynamic rupture models of the Mw 7.8 event, at two resolutions
+- Analysed records from seven earthquakes across Taiwan, Japan, New Zealand, and Türkiye
+- Screened 637 strong-motion stations from the 2023 Kahramanmaraş doublet down to the 71 that passed the peak-velocity threshold
+- Validated the extraction method against 244 independently identified pulses from NGA-West2
+- Compared recorded ground motions with seven fault models simulated for this study, and with published dynamic rupture simulations of the Mw 7.8 rupture
+- Published the findings in Bulletin of the Seismological Society of America and Earthquake Spectra
 
-#### **_Pipeline_**
+#### ***The Challenges***
 
-1. **Separate the two things that look alike.** A permanent ground offset produces a one-sided pulse that a wavelet cannot distinguish from a directivity pulse. Every record passes through instrument-drift correction, segmented baseline estimation (ICBM), and a static-offset routine before any pulse is extracted — otherwise fling and directivity are counted as the same phenomenon.
-2. **Extract.** Wavelet analysis over both horizontal components (Shahi & Baker, 2014; order-4 Daubechies), taking the largest-coefficient wavelet as the strongest pulse and recording its period, PGV and orientation.
-3. **Classify.** The pulse indicator, computed from the PGV and energy ratios of residual to original motion; for the doublet, PGV > 20 cm/s as an entry criterion.
-4. **Simulate.** Seven fault models solved with the frequency–wavenumber method: three dip angles (90°, 70°, 50°) and four asperity cases varying location and size (2.1 and 4.9 km), for an Mw 6.0 rupture carrying an Mw 5.8 asperity over a 13-layer velocity structure.
-5. **Compare** observed against synthetic, station by station, and ask what the model fails to reproduce.
+Near-fault earthquakes can concentrate energy into one or two large velocity pulses. When a pulse period aligns with a structure’s natural period, the resulting demand can be exceptionally damaging.
 
-#### **_Validation_**
+Common empirical models estimate pulse behaviour primarily from earthquake magnitude and distance. However, records from nearby stations often show very different pulse periods, amplitudes, and orientations. This project tested how well those simplified assumptions represent real earthquakes.
 
-- Static-offset estimates were **validated against InSAR** before being trusted
-- Extracted periods were checked against **244 pulses from NGA-West2**; for the Kumamoto mainshock the mean period is 5.2 s (σ 0.69) against an independent estimate of 5.5 s (σ 0.58–0.92)
-- Pulse-detection rates were compared bin by bin — empirical **67% / 50% / 7%** at 0–10, 10–20 and 20–50 km against **58% / 25% / 7%** for the synthetics — bounding how many synthetic detections are artefacts of missing high frequencies
+#### ***My contribution***
 
-#### **_Findings_**
+- **Designed and implemented** a reproducible signal-processing pipeline for multi-network strong-motion records.
+- **Processed and analysed** seismic data with different formats and sampling rates from national monitoring networks.
+- **Separated permanent ground displacement** from directivity pulses using baseline correction, static-offset estimation, and wavelet analysis.
+- **Built the comparison** between recorded motions and the dynamic rupture simulations produced by collaborators.
+- **Quantified model performance** using independent validation data and distance-binned detection rates.
+- Translated the results into two peer-reviewed publications.
 
-1. **Magnitude is a poor predictor.** Across 80 pulses from the five moderate events, period depends only weakly on magnitude between Mw 6 and 7.5, and the scatter within a single earthquake is large.
-2. **Asperities govern it instead.** The simulations show pulse period and amplitude controlled by the location and size of the asperity: velocities rise near it, and an asperity far from the hypocentre produces stronger pulses than a near one of identical total slip.
-3. **Standard practice overestimates reach.** Beyond 10 km, the empirical model — calibrated mainly on M > 6.5 events — predicts more pulses than moderate earthquakes actually produce.
-4. **At Mw 7.8 the scatter widens.** Pulses appear at 23 of 50 stations for Pazarcık and 7 of 21 for Elbistan, with periods from 3 to 14 s. The standard deviation of log period is 1.19 for the Mw 7.8 against 0.64 for the Mw 7.5: variability itself scales with magnitude.
-5. **Two stations 1.8 km apart disagree by 73°.** Orientations vary far more than directivity allows, and the dynamic rupture models — which align pulses with the fault-normal component — do not reproduce that spread. Stations 3.8 km apart differ on whether a pulse is there at all.
-6. **The worst-hit city recorded the largest pulse.** 173–179 cm/s at Antakya, 1.5 km from the rupture but 130 km from the hypocentre.
+#### ***Approach***
 
-#### **_Outcome_**
+**1. Prepare and standardise the data**
 
-Directivity alone does not account for what near-fault stations record. Local slip heterogeneity, fault geometry and site response matter as much, which means a hazard assessment built on a magnitude-to-period relationship understates what an individual site can experience. Dynamic rupture models need more heterogeneous slip and geometry before they reproduce the variability that the instruments show.
+Records from multiple seismic networks were corrected for instrument drift and inconsistent baselines. Static ground displacement was estimated before pulse extraction so that fling-step effects would not be mistaken for directivity pulses.
 
-#### **_Publications_**
+**2. Extract and classify velocity pulses**
 
-- [Within- and between-event variabilities of strong-velocity pulses of moderate earthquakes within dense seismic arrays](https://doi.org/10.1785/0120200376), Bulletin of the Seismological Society of America, 2022
-- [An analysis of directivity pulses using empirical data and dynamic rupture simulations of the 2023 Kahramanmaraş earthquake doublet](https://doi.org/10.1177/87552930241305012), Earthquake Spectra, 2025
+Wavelet analysis was applied across both horizontal components. For each record, the workflow identified the strongest pulse and measured its period, peak velocity, energy, and orientation.
+
+**3. Validate the workflow**
+
+Static-offset estimates were checked against InSAR observations. Extracted pulse periods were also compared with 244 independently identified NGA-West2 pulses and published results for the Kumamoto earthquake.
+
+**4. Test physical explanations**
+
+Observed records were compared station by station with seven simulated fault models. The models varied fault dip, asperity size, and asperity location to test how rupture complexity controls pulse characteristics.
+
+#### ***Key Findings***
+
+- **Magnitude alone was a weak predictor.** Across 80 pulses from five moderate earthquakes, pulse period varied substantially within individual events and showed only a weak relationship with magnitude.
+- **Rupture heterogeneity mattered.** Simulations showed that asperity location and size strongly affected pulse amplitude and period. An asperity farther from the hypocentre could generate stronger pulses even when total slip remained unchanged.
+- **A common empirical model overpredicted pulse occurrence beyond 10 km** for the moderate earthquakes studied.
+- **The Mw 7.8 event showed greater variability.** Observed pulse periods ranged from 3 to 14 seconds.
+- **Nearby stations produced sharply different results.** Two stations only 1.8 km apart had pulse orientations differing by 73°, while stations 3.8 km apart disagreed on whether a pulse was present at all.
+- **The largest measured pulse occurred at Antakya:** 173–179 cm/s, approximately 1.5 km from the rupture.
+
+#### ***Why it matters***
+
+The results show that directivity and earthquake magnitude cannot fully explain near-fault velocity pulses. Local slip heterogeneity, fault geometry, and site response can be equally important.
+
+For seismic hazard assessment, this means that magnitude-based relationships may hide the extreme variability experienced at individual sites. More realistic dynamic rupture models require heterogeneous slip distributions and fault geometries to reproduce what instruments record.
+
+#### ***Publications***
+
+- [Within- and between-event variabilities of strong-velocity pulses of moderate earthquakes within dense seismic arrays](https://doi.org/10.1785/0120200376), *Bulletin of the Seismological Society of America*, 2022
+- [An analysis of directivity pulses using empirical data and dynamic rupture simulations of the 2023 Kahramanmaraş earthquake doublet](https://doi.org/10.1177/87552930241305012), *Earthquake Spectra*, 2025

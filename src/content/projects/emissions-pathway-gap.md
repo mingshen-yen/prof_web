@@ -11,18 +11,18 @@ order: 1
 
 How far do emissions drift from a 1.5°C-compatible pathway if current trends hold? The answer is a number, and getting to it means pulling two scenarios out of a database of thousands and measuring the distance between them.
 
-#### **_Data_**
+#### ***Data***
 
 IPCC AR6 Scenario Explorer, regional (R6) database, hosted by IIASA. Two scenarios pulled from it, both modelled with IMAGE 3.2: `SSP2-baseline`, a middle-of-the-road future with no policy beyond current trends, and `1.5CNow_Gradual`, where reductions start immediately and decline gradually.
 
-#### **_Pipeline_**
+#### ***Pipeline***
 
 1. **Load** the AR6 database through `pyam.IamDataFrame`
 2. **Filter** to one region, one variable, and the two scenarios — `R6ASIA`, `Emissions|CO2`, 2010–2050 — averaging across models where a filter returns more than one
 3. **Compute** the year-by-year gap, the 2030 gap, the net-zero year for each pathway, and the emissions summed across the period
 4. **Plot** trajectories, annual gap, and the summed comparison
 
-#### **_Outcome_**
+#### ***Outcome***
 
 - The two pathways separate around 2020 and never reconverge: the baseline rises to roughly 25,000 Mt CO₂/yr by 2050 while the 1.5°C pathway falls to about 6,000
 - **The 2030 gap is 11,497 Mt CO₂/yr** — larger than the pathway's own emissions that year, so the shortfall by 2030 exceeds the entire budget the pathway allows for it
@@ -31,6 +31,6 @@ IPCC AR6 Scenario Explorer, regional (R6) database, hosted by IIASA. Two scenari
 
 The database reports at five-year intervals and those sampled values are summed directly, so the totals above compare to each other but are not tonnes emitted — a true cumulative figure would integrate over the interval.
 
-#### **_Reference_**
+#### ***Reference***
 
-Riahi, Schaeffer et al., *Mitigation Pathways Compatible with Long-Term Goals*, in **Mitigation of Climate Change**, IPCC, Geneva, 2022.
+Riahi, Schaeffer et al., 2022, Mitigation Pathways Compatible with Long-Term Goals, in Mitigation of Climate Change, IPCC, Geneva.
