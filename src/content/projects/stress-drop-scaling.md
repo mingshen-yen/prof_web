@@ -1,6 +1,6 @@
 ---
 title: Seismic Stress Drop Scaling Study
-summary: "A study of how seismic stress drop scales with magnitude, and what that implies for hazard estimates."
+summary: "A waveform pipeline that reduced ~52 million raw records to 6,135 characterised earthquakes, then tested how stress drop scales with magnitude across Western Europe."
 tag: Research
 image: /images/stress-drop-fig8b.jpg
 stack: [Python, SQL]
@@ -12,17 +12,23 @@ featured: true
 order: 2
 ---
 
-Built a large-scale seismic waveform processing pipeline covering Western Europe (1990-2020). Starting from ~52 million raw waveforms, the pipeline performed automated quality control, spectral decomposition, and source parameter estimation — successfully characterizing 6,135 seismic events in terms of seismic moment, corner frequency, and stress drop, and investigating the scaling relationship between stress drop and moment magnitude.
+Stress drop is one of the parameters hazard models depend on, and estimating it means getting source, site, and path effects apart from one another across every record you have. This built the pipeline to do that at continental scale, then asked what the resulting catalogue says about scaling.
 
-#### ***Method***
+#### ***Data***
 
-1. **Model used**: ω²-source model — stress drop derived by combining corner frequency and seismic moment
-2. **Technique**: Generalized Inversion Technique (GIT) to separate source, site, and path effects
-3. **Dataset**: 220,000 high-quality records from 6,135 seismic events (Jan 1990 - May 2020), shallow crustal events in Western Europe
+- ~52 million raw waveforms, Western Europe, January 1990 to May 2020
+- Reduced to 220,000 high-quality records covering 6,135 shallow crustal events
 
-#### ***Key Findings***
+#### ***Pipeline***
 
-1. Most source spectra conform to the standard ω²-model
-2. Stress drop shows a positive correlation with moment magnitude for Mw 3-4
-3. Self-similarity observed for magnitudes Mw > 4
-4. Mean stress drop in western Europe: 13.8 MPa
+1. **Automated quality control** over the full raw archive — the step that takes 52 million records down to the 220,000 worth analysing
+2. **Spectral decomposition** using the Generalized Inversion Technique (GIT), which separates source, site, and path contributions rather than letting them contaminate each other
+3. **Source parameter estimation** per event: seismic moment, corner frequency, and stress drop derived from the ω²-source model
+
+#### ***Validation***
+
+Source spectra were checked against the standard ω²-model, which most conform to — the model fit is what makes the derived stress drops trustworthy rather than merely computed.
+
+#### ***Outcome***
+
+A catalogue of 6,135 characterised events, and from it: stress drop correlates positively with moment magnitude between Mw 3 and 4, self-similarity holds above Mw 4, and the mean stress drop across Western Europe is 13.8 MPa.
