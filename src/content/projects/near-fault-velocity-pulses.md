@@ -49,6 +49,5 @@ Directivity alone does not account for what near-fault stations record. Local sl
 
 #### **_Publications_**
 
-- Within- and between-event variabilities of strong-velocity pulses of moderate earthquakes within dense seismic arrays, Bulletin of the Seismological Society of America, 2022, [link](https://doi.org/10.1785/0120200376)
-- [An analysis of directivity pulses using empirical data and dynamic rupture simulations of the 2023 Kahramanmaraş earthquake doublet](https://doi.org/10.1177/87552930241305012)
-  Earthquake Spectra, 2025
+- [Within- and between-event variabilities of strong-velocity pulses of moderate earthquakes within dense seismic arrays](https://doi.org/10.1785/0120200376), Bulletin of the Seismological Society of America, 2022
+- [An analysis of directivity pulses using empirical data and dynamic rupture simulations of the 2023 Kahramanmaraş earthquake doublet](https://doi.org/10.1177/87552930241305012), Earthquake Spectra, 2025
