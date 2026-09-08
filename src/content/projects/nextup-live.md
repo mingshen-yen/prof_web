@@ -1,5 +1,5 @@
 ---
-title: NextUp Live
+title: NextUp Live, Event Discovery App
 summary: "A team-built full-stack app for browsing live music events; I designed and built the React and TypeScript frontend."
 tag: Software
 image: /images/nextup-live.jpg

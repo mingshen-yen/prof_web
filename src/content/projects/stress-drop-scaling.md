@@ -1,5 +1,5 @@
 ---
-title: Seismic Stress Drop Scaling Study
+title: 52 Million Waveforms, 6,135 Earthquakes
 summary: "A waveform pipeline that reduced ~52 million raw records to 6,135 characterised earthquakes, then tested how stress drop scales with magnitude across Western Europe."
 tag: Research
 image: /images/stress-drop-fig8b.jpg
