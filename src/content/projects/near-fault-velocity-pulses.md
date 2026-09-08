@@ -3,9 +3,9 @@ title: Near-Fault Earthquake Pulses
 summary: "80 velocity pulses extracted from five moderate earthquakes across three national networks, then 30 more from the 2023 Kahramanmaraş doublet — each tested against a simulation of the same rupture."
 tag: Research
 image: /images/velocity-pulses-moderate.jpg
-stack: [Python, MATLAB]
-sourceUrl: https://doi.org/10.1177/87552930241305012
-sourceKind: paper
+stack: [Python, MATLAB, wavelet analysis, statistical validation, signal processing]
+# sourceUrl: https://doi.org/10.1177/87552930241305012
+# sourceKind: code
 liveUrl: https://tec.earth.sinica.edu.tw/publication/newsletter/html/202412/46_06.html
 liveKind: article
 featured: false
@@ -73,5 +73,5 @@ For seismic hazard assessment, this means that magnitude-based relationships may
 #### ***Publications***
 
 - [Within- and between-event variabilities of strong-velocity pulses of moderate earthquakes within dense seismic arrays](https://doi.org/10.1785/0120200376), *Bulletin of the Seismological Society of America*, 2022
-- [Significance of pulse-like ground motions and directivity effects in moderate earthquakes: the example of the Mw 6.1 Gölyaka-Düzce earthquake](https://doi.org/10.1785/0120230043), *Bulletin of the Seismological Society of America*, 2023
+- [Significance of pulse-like ground motions and directivity effects in moderate earthquakes: the example of the Mw 6.1 Gölyaka-Düzce earthquake](https://doi.org/10.1785/0120230043), *Bulletin of the Seismological Society of America*, 2024
 - [An analysis of directivity pulses using empirical data and dynamic rupture simulations of the 2023 Kahramanmaraş earthquake doublet](https://doi.org/10.1177/87552930241305012), *Earthquake Spectra*, 2025

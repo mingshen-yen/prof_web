@@ -44,9 +44,9 @@
     "notFound": "Project not found.",
     "viewAll": "View all projects",
     "filterAll": "All",
-    "paper": "Read the paper",
-    "article": "Related article",
-    "notes": "Study notes"
+    "paper": "Paper",
+    "article": "Newsletter",
+    "notes": "Notes"
   },
   "about": {
     "greeting": "Hello,",
