@@ -33,4 +33,4 @@ The database reports at five-year intervals and those sampled values are summed 
 
 #### **_Reference_**
 
-Riahi, Schaeffer et al., Mitigation Pathways Compatible with Long-Term Goals, in Mitigation of Climate Change, IPCC, Geneva, 2022.
+Riahi, Schaeffer et al., *Mitigation Pathways Compatible with Long-Term Goals*, in **Mitigation of Climate Change**, IPCC, Geneva, 2022.
