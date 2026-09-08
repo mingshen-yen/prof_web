@@ -35,7 +35,7 @@ Common empirical models estimate pulse behaviour primarily from earthquake magni
 - **Separated permanent ground displacement** from directivity pulses using baseline correction, static-offset estimation, and wavelet analysis.
 - **Built the comparison** between recorded motions and the dynamic rupture simulations produced by collaborators.
 - **Quantified model performance** using independent validation data and distance-binned detection rates.
-- Translated the results into two peer-reviewed publications.
+- Translated the results into two first-author publications and one as co-author.
 
 #### ***Approach***
 
@@ -73,4 +73,5 @@ For seismic hazard assessment, this means that magnitude-based relationships may
 #### ***Publications***
 
 - [Within- and between-event variabilities of strong-velocity pulses of moderate earthquakes within dense seismic arrays](https://doi.org/10.1785/0120200376), *Bulletin of the Seismological Society of America*, 2022
+- [Significance of pulse-like ground motions and directivity effects in moderate earthquakes: the example of the Mw 6.1 Gölyaka-Düzce earthquake](https://doi.org/10.1785/0120230043), *Bulletin of the Seismological Society of America*, 2023
 - [An analysis of directivity pulses using empirical data and dynamic rupture simulations of the 2023 Kahramanmaraş earthquake doublet](https://doi.org/10.1177/87552930241305012), *Earthquake Spectra*, 2025
