@@ -920,6 +920,10 @@
     @apply list-decimal;
   }
 
+  .project-detail__body a {
+    @apply underline underline-offset-2 text-(--color-accent-bright) hover:text-(--color-accent);
+  }
+
   .project-detail__body p {
     @apply text-xl md:text-base leading-relaxed text-(--text-body);
   }
