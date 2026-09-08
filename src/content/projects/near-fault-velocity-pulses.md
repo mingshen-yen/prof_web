@@ -1,5 +1,5 @@
 ---
-title: Near-Fault Earthquake Pulses: Killer Pulse
+title: Near-Fault Earthquake Pulses
 summary: "80 velocity pulses extracted from five moderate earthquakes across three national networks, then 30 more from the 2023 Kahramanmaraş doublet — each tested against a simulation of the same rupture."
 tag: Research
 image: /images/velocity-pulses-moderate.jpg
