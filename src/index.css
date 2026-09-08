@@ -151,7 +151,19 @@
   }
 
   em {
-    @apply text-(--color-accent-bright) not-italic;
+    @apply italic;
+  }
+
+  /* Section headings are authored as ***Heading***, which nests an <em>
+     inside the heading. Those read as accent-coloured labels rather than
+     italics, so they opt out of the rule above. */
+  h1 em,
+  h2 em,
+  h3 em,
+  h4 em,
+  h5 em,
+  h6 em {
+    @apply not-italic text-(--color-accent-bright);
   }
 
   h2 {
